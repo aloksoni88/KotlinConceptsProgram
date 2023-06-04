@@ -1,3 +1,5 @@
+
+
 fun lambdasHighOrderFun1(){
     val obj = Multiplication()
     val mulValue = obj.getMultiplication(3,4)

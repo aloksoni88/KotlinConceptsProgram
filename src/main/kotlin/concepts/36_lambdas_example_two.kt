@@ -24,3 +24,7 @@ class MyProgram {
         println(result)
     }
 }
+
+fun main() {
+    lambdasExampleTwo()
+}

@@ -1,4 +1,4 @@
-package datastructure.tree
+package datastructure.tree.binarytree
 
 var index: Int = -1
 fun main() {
@@ -14,9 +14,15 @@ fun main() {
 }
 
  class Node(data: Int) {
-    var value = data
-    var left: Node? = null
-    var right: Node? = null
+     var value = data
+     var left: Node? = null
+     var right: Node? = null
+
+     constructor(data : Int, left: Node, right: Node) : this(data) {
+         this.value = data
+         this.left = left
+         this.right = right
+     }
 }
 
 fun buildBinaryTree(arr: IntArray) : Node?{
@@ -57,3 +63,5 @@ fun printTreeWithPostorderTraversal(root: Node?){
     printTreeWithPostorderTraversal(root.right)
     print("${root.value} ")
 }
+
+
